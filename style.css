@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #000;
+}
+
+div {
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 10px solid;
+    animation: loader 1s linear infinite alternate;
+}
+
+@keyframes loader {
+    0% {
+        border-color: #ffff transparent transparent transparent;
+    }
+
+    33% {
+        border-color: #fff #fff transparent transparent;
+    }
+
+    66% {
+        border-color: #fff #fff #fff transparent;
+    }
+
+    100% {
+        border-color: #fff #ffffff #ffffff #ffffff;
+    }
+}
